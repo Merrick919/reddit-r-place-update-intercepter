@@ -1,6 +1,6 @@
 # reddit-r-place-update-intercepter
  
-1. Install Fiddler Classic
+1. Install and run Fiddler Classic
 2. Have a r/place tab active
 3. Put
 ```
