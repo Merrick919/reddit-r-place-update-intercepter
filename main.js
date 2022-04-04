@@ -40,7 +40,7 @@ http.createServer((req, res) => {
 						method: "post",
 						body: JSON.stringify(body),
 						headers: {"Content-Type": "application/json"}
-					});
+					}).catch(console.error);
 
 				}
 			}
