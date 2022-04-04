@@ -3,7 +3,7 @@ import getPixels from "get-pixels";
 import fetch from "node-fetch";
 
 http.createServer((req, res) => {
-	console.log("request url: " + req.url);
+	console.log("Request url: " + req.url);
 
 	req.on("end", () => {
 		res.writeHead(200);
