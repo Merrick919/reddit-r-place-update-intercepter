@@ -10,7 +10,7 @@ http.createServer((req, res) => {
 		res.end();
 	})
 
-	getPixels(req.url.slice(5), function(error, pixels) {
+	getPixels("http://" + req.url.slice(6), function(error, pixels) {
 		if (error) {
 			console.log("Bad image path");
 			return;
