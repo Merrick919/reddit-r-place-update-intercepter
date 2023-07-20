@@ -96,7 +96,7 @@ http.createServer((req, res) => {
 				if (r == 0 && g == 0 && b == 0 && a == 0) {
 					//
 				} else {
-					const url = req.url.slice(48).split("-");
+					const url = req.url.slice(63).split("-");
 					
 					const body = {
 						"time": url[0],
@@ -111,7 +111,7 @@ http.createServer((req, res) => {
 						"a": a
 					};
 
-					fetch("http://127.0.0.1:9001", {
+					fetch("http://127.0.0.1:9092", {
 						method: "post",
 						body: JSON.stringify(body),
 						headers: {"Content-Type": "application/json"}
@@ -121,4 +121,4 @@ http.createServer((req, res) => {
 			}
 		}
 	})
-}).listen(9000);
+}).listen(9091);
