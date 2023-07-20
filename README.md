@@ -13,7 +13,7 @@ if (oSession.HostnameIs("garlic-bread.reddit.com") && /\/media\/canvas-images\/d
     }
 }
 ```
-in `static function OnBeforeResponse(oSession: Session) {}`, which is inside `class Handlers{}` (in the FiddlerScript tab)
-4. Run `intercept-receiver.js` and `parser.js`
-5. ?????
+in `static function OnBeforeResponse(oSession: Session) {}`, which is inside `class Handlers{}` (in the FiddlerScript tab)  
+4. Run `intercept-receiver.js` and `parser.js`  
+5. ?????  
 6. PROFIT!!!
